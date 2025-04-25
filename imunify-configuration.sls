@@ -1,6 +1,6 @@
 create_example_config:
   file.managed:
-    - name: /etc/sysconfig/imunify360/imunify360.config.d/10-example.config
+    - name: /etc/sysconfig/imunify360/imunify360.config.d/50-example.config
     - makedirs: True
     - mode: 644
     - contents: |
