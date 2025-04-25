@@ -22,7 +22,7 @@ Finally, you may run it with dev activation key to see if we successfully config
 
 ```sh
 salt host state.apply imunify-install-cpanel pillar='{"activation_key": "<KEY>"}' # for cpanel
-salt host state.apply imunify-install-plesk pillar='{"activation_key": "<KEY>", "plesk_license_key": "<PLESK_KEY>"}' # for plesk
+salt host state.apply imunify-install-plesk pillar='{"plesk_license_key": "<PLESK_KEY>"}' # for plesk
 ```
 
 Accept EULA license and apply configuration:
