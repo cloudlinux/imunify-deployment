@@ -1,5 +1,7 @@
 # Imunify Deployment
 
+Provided examples applicable for Cloudlinux 8 and 9 with cPanel or Plesk installed.
+
 ## Slackstack
 
 ### Usage

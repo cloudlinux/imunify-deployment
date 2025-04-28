@@ -17,13 +17,6 @@ install_ui_cpanel_package:
 # Register product (if activation key provided)
 register_product:
   cmd.run:
-    - name: |
-        output=$(imunify360-agent register {{ pillar.get('activation_key', 'IPL') }} 2>&1)
-        if echo "$output" | grep -q "WARNING: Agent is already registered"; then
-          exit 0
-        else
-          echo "$output"
-          exit $?
-        fi
+    - name: imunify360-agent register {{ pillar.get('activation_key', 'IPL') }}
     - require:
       - pkg: install_imunify360
